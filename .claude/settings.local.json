@@ -5,7 +5,8 @@
       "Bash(claude mcp:*)",
       "Bash(setup_unreal_mcp.bat)",
       "Bash(powershell:*)",
-      "Bash(cmd.exe:*)"
+      "Bash(cmd.exe:*)",
+      "Bash(mkdir:*)"
     ],
     "deny": []
   }
