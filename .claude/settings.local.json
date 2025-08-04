@@ -6,7 +6,13 @@
       "Bash(setup_unreal_mcp.bat)",
       "Bash(powershell:*)",
       "Bash(cmd.exe:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(git lfs:*)",
+      "Bash(\"C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Binaries\\DotNET\\UnrealBuildTool\\UnrealBuildTool.exe\" -projectfiles -project=\"BirdDive.uproject\" -game -rocket -progress)",
+      "Bash(\"C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Binaries\\DotNET\\UnrealBuildTool\\UnrealBuildTool.exe\" -projectfiles -project=\"D:\\UEProject\\BirdDiveProject\\BirdDive\\BirdDive.uproject\" -game -rocket -progress)",
+      "Bash(\"C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Binaries\\Win64\\UnrealEditor.exe\" \"D:\\UEProject\\BirdDiveProject\\BirdDive\\BirdDive.uproject\" -stdout -FullStdOutLogOutput -log -compile)",
+      "Bash(\"C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Binaries\\Win64\\UnrealBuildTool.exe\" BirdDive Development Win64 -Project=\"D:\\UEProject\\BirdDiveProject\\BirdDive\\BirdDive.uproject\" -NoHotReloadFromIDE)",
+      "Bash(\"C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Binaries\\DotNET\\UnrealBuildTool\\UnrealBuildTool.exe\" BirdDive Development Win64 -Project=\"D:\\UEProject\\BirdDiveProject\\BirdDive\\BirdDive.uproject\" -NoHotReloadFromIDE)"
     ],
     "deny": []
   }

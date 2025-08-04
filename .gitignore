@@ -1,0 +1,132 @@
+# Unreal Engine 5 .gitignore
+
+# Binaries
+Binaries/
+BirdDive/Binaries/
+
+# Build
+Build/
+BirdDive/Build/
+
+# Intermediate
+Intermediate/
+BirdDive/Intermediate/
+
+# DerivedDataCache
+DerivedDataCache/
+BirdDive/DerivedDataCache/
+
+# Saved
+Saved/
+BirdDive/Saved/
+
+# Script plugin intermediate files
+BirdDive/Plugins/*/Intermediate/
+
+# Cache and temporary files
+*.tmp
+*_BuiltData.uasset
+*.pak
+*.exe
+!ThirdParty/**/*.exe
+!**/Tools/**/*.exe
+!**/Binaries/**/*.exe
+
+# Visual Studio
+.vs/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.sdf
+*.opensdf
+*.db
+*.opendb
+
+# Visual Studio Code
+.vscode/
+
+# CLion
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Android (if building for Android)
+Build/Android/
+BirdDive/Build/Android/
+
+# iOS (if building for iOS)  
+Build/IOS/
+BirdDive/Build/IOS/
+
+# Exclude generated project files
+*.xcworkspace
+*.xcodeproj
+
+# Exclude Starter Content
+BirdDive/Content/StarterContent/
+
+# Exclude Marketplace Content (unless specifically needed)
+BirdDive/Content/Marketplace/
+
+# Documentation build files
+docs/_build/
+docs/.sphinx/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.env
+
+# Node.js (if using any JS tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+*.log
+Logs/
+
+# UE5 specific ignores
+*.VC.db
+*.VC.opendb
+*.VC.VC.opendb
+
+# Development and debug files
+!**/Debug/**
+!**/Development/**
+!**/Shipping/**
+
+# Plugin binaries
+BirdDive/Plugins/*/Binaries/
+
+# Automation test results
+TestResults/
+
+# Local config files that shouldn't be shared
+**/Config/LocalEngine.ini
+**/Config/LocalEditor.ini
+**/Config/LocalGame.ini
+**/Config/LocalInput.ini
+**/Config/Local*.ini
+
+# Rider
+.idea/
+
+# JetBrains
+*.iml
+*.iws
+*.ipr
