@@ -51,5 +51,13 @@ public class BirdDive : ModuleRules
 		bEnableExceptions = false;
 		bUseRTTI = false;
 		CppCompileWarningSettings.UndefinedIdentifierWarningLevel = WarningLevel.Off;
+
+		// Test configuration
+		if (Target.Configuration != UnrealTargetConfiguration.Shipping && Target.bBuildEditor)
+		{
+			PrivateDependencyModuleNames.AddRange(new string[] {
+				"AutomationController"
+			});
+		}
 	}
 }

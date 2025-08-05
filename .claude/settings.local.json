@@ -12,7 +12,12 @@
       "Bash(\"C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Binaries\\DotNET\\UnrealBuildTool\\UnrealBuildTool.exe\" -projectfiles -project=\"D:\\UEProject\\BirdDiveProject\\BirdDive\\BirdDive.uproject\" -game -rocket -progress)",
       "Bash(\"C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Binaries\\Win64\\UnrealEditor.exe\" \"D:\\UEProject\\BirdDiveProject\\BirdDive\\BirdDive.uproject\" -stdout -FullStdOutLogOutput -log -compile)",
       "Bash(\"C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Binaries\\Win64\\UnrealBuildTool.exe\" BirdDive Development Win64 -Project=\"D:\\UEProject\\BirdDiveProject\\BirdDive\\BirdDive.uproject\" -NoHotReloadFromIDE)",
-      "Bash(\"C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Binaries\\DotNET\\UnrealBuildTool\\UnrealBuildTool.exe\" BirdDive Development Win64 -Project=\"D:\\UEProject\\BirdDiveProject\\BirdDive\\BirdDive.uproject\" -NoHotReloadFromIDE)"
+      "Bash(\"C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Binaries\\DotNET\\UnrealBuildTool\\UnrealBuildTool.exe\" BirdDive Development Win64 -Project=\"D:\\UEProject\\BirdDiveProject\\BirdDive\\BirdDive.uproject\" -NoHotReloadFromIDE)",
+      "mcp__ide__executeCode",
+      "Bash(python:*)",
+      "Bash(move:*)",
+      "Bash(mv:*)",
+      "Bash(rm:*)"
     ],
     "deny": []
   }

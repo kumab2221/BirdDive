@@ -4,3 +4,12 @@
 
 #include "CoreMinimal.h"
 
+// Core system classes forward declarations
+class ABirdDiveGameMode;
+class ABirdDiveGameState;
+class ABirdDivePlayerController;
+class ABirdCharacter;
+
+// Logging category
+DECLARE_LOG_CATEGORY_EXTERN(LogBirdDive, Log, All);
+
