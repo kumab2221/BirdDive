@@ -13,6 +13,7 @@ public class BirdDive : ModuleRules
 			"CoreUObject", 
 			"Engine", 
 			"InputCore",
+			"EnhancedInput",
 			"Slate",
 			"SlateCore",
 			"UMG",
