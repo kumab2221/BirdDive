@@ -17,7 +17,9 @@
       "Bash(python:*)",
       "Bash(move:*)",
       "Bash(mv:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(\"C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Binaries\\Win64\\UnrealEditor.exe\" \"D:\\UEProject\\BirdDiveProject\\BirdDive\\BirdDive.uproject\" -stdout -FullStdOutLogOutput -ExecCmds=\"Automation RunTests BirdDive\" -unattended -NullRHI -nosplash -log)",
+      "Bash(\"C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Binaries\\Win64\\UnrealEditor.exe\" \"D:\\UEProject\\BirdDiveProject\\BirdDive\\BirdDive.uproject\" -stdout -FullStdOutLogOutput -ExecCmds=\"Automation RunTests BirdDive.ScoreCalculator.BasicScore\" -unattended -NullRHI -nosplash -log -timeout=30)"
     ],
     "deny": []
   }
