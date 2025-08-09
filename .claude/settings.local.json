@@ -24,7 +24,9 @@
       "Bash(\"C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Binaries\\Win64\\UnrealEditor.exe\" \"D:\\UEProject\\BirdDiveProject\\BirdDive\\BirdDive.uproject\" -stdout -FullStdOutLogOutput -ExecCmds=\"Automation RunTests BirdDive.PlayerController.Basic\" -unattended -NullRHI -nosplash -log -timeout=30)",
       "Bash(\"C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Binaries\\Win64\\UnrealEditor.exe\" \"D:\\UEProject\\BirdDiveProject\\BirdDive\\BirdDive.uproject\" -stdout -FullStdOutLogOutput -ExecCmds=\"Automation RunTests BirdDive.SplitScreen.Component\" -unattended -NullRHI -nosplash -log -timeout=30)",
       "Bash(\"C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Binaries\\Win64\\UnrealEditor.exe\" \"D:\\UEProject\\BirdDiveProject\\BirdDive\\BirdDive.uproject\" -stdout -FullStdOutLogOutput -ExecCmds=\"Automation RunTests BirdDive.FirstPersonCamera\" -unattended -NullRHI -nosplash -log -timeout=30)",
-      "Bash(\"C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Binaries\\Win64\\UnrealEditor.exe\" \"D:\\UEProject\\BirdDiveProject\\BirdDive\\BirdDive.uproject\" -stdout -FullStdOutLogOutput -ExecCmds=\"Automation RunTests BirdDive.FirstPersonCamera.Basic\" -unattended -NullRHI -nosplash -log -timeout=30)"
+      "Bash(\"C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Binaries\\Win64\\UnrealEditor.exe\" \"D:\\UEProject\\BirdDiveProject\\BirdDive\\BirdDive.uproject\" -stdout -FullStdOutLogOutput -ExecCmds=\"Automation RunTests BirdDive.FirstPersonCamera.Basic\" -unattended -NullRHI -nosplash -log -timeout=30)",
+      "Bash(\"C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Binaries\\Win64\\UnrealEditor.exe\" \"D:\\UEProject\\BirdDiveProject\\BirdDive\\BirdDive.uproject\" -stdout -FullStdOutLogOutput -ExecCmds=\"Automation RunTests BirdDive.SideViewCamera.Basic\" -unattended -NullRHI -nosplash -log -timeout=30)",
+      "Bash(\"C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Binaries\\Win64\\UnrealEditor.exe\" \"D:\\UEProject\\BirdDiveProject\\BirdDive\\BirdDive.uproject\" -stdout -FullStdOutLogOutput -ExecCmds=\"Automation RunTests BirdDive.SideViewCamera\" -unattended -NullRHI -nosplash -log -timeout=30)"
     ],
     "deny": []
   }
