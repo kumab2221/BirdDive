@@ -13,6 +13,7 @@ class UWindForceComponent;
 class UBirdCharacterMovementComponent;
 class UFlightStateManager;
 class ULandingDetectionComponent;
+class UBirdControlRigComponent;
 
 /**
  * Bird Character Class
@@ -85,6 +86,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Components")
 	ULandingDetectionComponent* GetLandingDetectionComponent() const { return LandingDetectionComponent; }
 
+	UFUNCTION(BlueprintCallable, Category = "Components")
+	UBirdControlRigComponent* GetBirdControlRigComponent() const { return BirdControlRigComponent; }
+
 	// Enhanced Input System accessors for tests
 	UInputMappingContext* GetDefaultMappingContext() const { return DefaultMappingContext; }
 	UInputAction* GetFlyAction() const { return FlyAction; }
@@ -109,6 +113,10 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Flight")
 	ULandingDetectionComponent* LandingDetectionComponent;
 
+	// Animation system components
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Animation")
+	UBirdControlRigComponent* BirdControlRigComponent;
+
 	// Flight parameters
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Flight Parameters")
 	float FlyForceMultiplier = 1000.0f;
@@ -124,6 +132,9 @@ private:
 	bool bHasBegunPlay;
 
 public:
-	// Test helper function
+	// Test helper functions
 	bool HasBegunPlay() const { return bHasBegunPlay; }
+	
+	UFUNCTION(BlueprintCallable, Category = "Test", CallInEditor)
+	void InitializeForTest() { BeginPlay(); }
 };

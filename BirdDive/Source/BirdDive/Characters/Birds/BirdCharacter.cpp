@@ -11,6 +11,7 @@
 #include "../../Systems/Physics/BirdCharacterMovementComponent.h"
 #include "../../Systems/Flight/FlightStateManager.h"
 #include "../../Systems/Flight/LandingDetectionComponent.h"
+#include "../../Systems/Animation/BirdControlRigComponent.h"
 
 ABirdCharacter::ABirdCharacter()
 {
@@ -37,6 +38,9 @@ ABirdCharacter::ABirdCharacter()
 	// Create flight system components
 	FlightStateManager = CreateDefaultSubobject<UFlightStateManager>(TEXT("FlightStateManager"));
 	LandingDetectionComponent = CreateDefaultSubobject<ULandingDetectionComponent>(TEXT("LandingDetectionComponent"));
+
+	// Create animation system components
+	BirdControlRigComponent = CreateDefaultSubobject<UBirdControlRigComponent>(TEXT("BirdControlRigComponent"));
 
 	// Initialize flight parameters
 	FlyForceMultiplier = 1000.0f;
@@ -91,6 +95,19 @@ void ABirdCharacter::Tick(float DeltaTime)
 	{
 		FVector WindForce = WindForceComponent->CalculateWindForce(GetActorLocation(), GetActorLocation().Z);
 		BirdMovementComponent->ApplyWindForce(WindForce, DeltaTime);
+		
+		// Update ControlRig with wind force data
+		if (BirdControlRigComponent && BirdControlRigComponent->IsInitialized())
+		{
+			BirdControlRigComponent->ApplyWindForce(WindForce);
+		}
+	}
+
+	// Update ControlRig with current flight data
+	if (BirdControlRigComponent && BirdControlRigComponent->IsInitialized())
+	{
+		BirdControlRigComponent->SetFlightSpeed(GetCurrentSpeed());
+		BirdControlRigComponent->SetFlightState(GetCurrentFlightState());
 	}
 
 	// Check for automatic landing detection
