@@ -89,6 +89,19 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Components")
 	UBirdControlRigComponent* GetBirdControlRigComponent() const { return BirdControlRigComponent; }
 
+	// Animation Integration
+	UFUNCTION(BlueprintCallable, Category = "Flight")
+	EFlightState GetFlightState() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Flight")
+	FVector2D GetFlightInput() const { return CurrentFlightInput; }
+
+	UFUNCTION(BlueprintCallable, Category = "Flight")
+	float GetRollInput() const { return CurrentRollInput; }
+
+	UFUNCTION(BlueprintCallable, Category = "Flight")
+	void SetFlightInput(const FVector2D& Input) { CurrentFlightInput = Input; }
+
 	// Enhanced Input System accessors for tests
 	UInputMappingContext* GetDefaultMappingContext() const { return DefaultMappingContext; }
 	UInputAction* GetFlyAction() const { return FlyAction; }
@@ -126,6 +139,13 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Flight Parameters")
 	float MaxSafeSpeed = 2000.0f;
+
+	// Input tracking for animation
+	UPROPERTY(BlueprintReadOnly, Category = "Input")
+	FVector2D CurrentFlightInput = FVector2D::ZeroVector;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Input")
+	float CurrentRollInput = 0.0f;
 
 private:
 	// Test helper flag

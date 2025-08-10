@@ -37,6 +37,8 @@ enum class EFlightState : uint8
     Idle        UMETA(DisplayName = "Idle"),        // 待機状態
     Flying      UMETA(DisplayName = "Flying"),      // 飛行中
     Gliding     UMETA(DisplayName = "Gliding"),     // 滑空中
+    Climbing    UMETA(DisplayName = "Climbing"),    // 上昇中
+    Diving      UMETA(DisplayName = "Diving"),      // 降下中
     Turning     UMETA(DisplayName = "Turning"),     // 旋回中
     Landing     UMETA(DisplayName = "Landing"),     // 着地中
     Landed      UMETA(DisplayName = "Landed")       // 着地完了

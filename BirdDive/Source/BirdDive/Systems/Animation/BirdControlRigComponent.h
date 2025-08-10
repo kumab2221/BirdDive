@@ -68,6 +68,12 @@ public:
     FBirdControlRigParams GetControlParameters() const;
 
     /**
+     * 現在の制御パラメータを取得 (Animation Instance用)
+     */
+    UFUNCTION(BlueprintCallable, Category = "ControlRig")
+    FBirdControlRigParams GetCurrentParameters() const { return GetControlParameters(); }
+
+    /**
      * 最後のエラーメッセージを取得
      */
     UFUNCTION(BlueprintCallable, Category = "ControlRig")

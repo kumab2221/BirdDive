@@ -162,6 +162,11 @@ EFlightState ABirdCharacter::GetCurrentFlightState() const
 	return FlightStateManager ? FlightStateManager->GetCurrentState() : EFlightState::Idle;
 }
 
+EFlightState ABirdCharacter::GetFlightState() const
+{
+	return GetCurrentFlightState();
+}
+
 void ABirdCharacter::SetFlightState(EFlightState NewState)
 {
 	if (FlightStateManager)
